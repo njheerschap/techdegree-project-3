@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: #fafeff;
+    padding: 10px;
+}
+
+h1 {
+    background-color:#0f1152 ;
+    margin: 0;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.subhead {
+    margin: 25px 15px 0px 15px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid black;
+}
+
+.subhead p {
+    margin: 10px 5px;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+main {
+    border-top: 2px solid black;
+    margin: 3px 15px;
+}
+
+::placeholder {
+    font-size: .75rem;
+    text-align: right;
+    color: grey;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.contact_input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px 5px;
+    border: none;
+    background-color: #efefef;
+    border-radius: 5px;
+    font-size: .75rem;
+}
+
+input,
+select,
+button, 
+textarea {
+    transition: background-color 1s ease;
+    background-color:#efefef
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+    background-color: #c2ffff;
+}
+
+legend {
+    font-size: 1.1rem;
+}
+
+.contact, 
+.newsletter,
+textarea {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.contact {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+}
+
+.contact legend {
+    padding: 20px 0;
+}
+
+label {
+    font-weight: 200;
+}
+
+
+
+select {
+    color: #a3a5a7;
+}
+
+.box {
+    margin: 8px 0;
+}
+
+.newsletter legend,
+.newsletter label {
+    margin: 15px 0;
+}
+
+textarea {
+    background-color: #efefef;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 50px;
+    border: none;
+    background-color: #0082b2;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: white;
+}
+
+footer {
+    margin: 20px auto;
+    text-align: center;
+    font-size: .75rem;
+    color: grey;
+    font-style: italic;
+}
+
+@media(min-width: 768px) {
+    .subhead,
+    main {
+        width: 50%;
+        margin: 3px auto;
+    }
+
+    .subhead {
+        margin-top: 25px;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
+    .contact_label {
+        flex-basis: 30%;
+        margin: auto;
+    }
+
+    .contact_input {
+        flex-basis: 70%;
+    }
+
+    .zip_code {
+        max-width: 25%;
+    }
+    
+    .zip_label{
+    margin: auto 0;
+    }
+}
