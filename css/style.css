@@ -113,11 +113,14 @@ label {
     font-weight: 200;
 }
 
-
-
 select {
     color: #a3a5a7;
 }
+
+.zip_code {
+    max-width: 50%;
+}
+
 
 .box {
     margin: 8px 0;
